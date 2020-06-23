@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.9.20",
     "netlify-lambda": "^1.6.3",
     "serverless-http": "^1.10.1"
   },
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/troyclarke69/netlify-express-mongoDb.git"
+    "url": "git+https://github.com/troyclarke69/express-mongo-netlify.git"
   },
   "keywords": [],
   "author": "",
