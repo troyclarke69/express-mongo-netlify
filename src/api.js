@@ -1,3 +1,4 @@
+// import productRoute from '../routes/productRoute';
 const express = require("express");
 const serverless = require("serverless-http");
 const mongoose = require('mongoose');
@@ -52,9 +53,18 @@ router.get("/", async (req, res) => {
   res.send(products);
 });
 
-app.use(`/.netlify/functions/api`, router);
+app.use(`/.netlify/functions/api/products`, router);
+
+// app.use('/api/users', userRoute);
+// app.use('/api/products', productRoute);
+// app.use('/api/orders', orderRoute);
+// app.get('/api/config/paypal', (req, res) => {
+//   res.send(config.PAYPAL_CLIENT_ID);
+// });
+
 module.exports = app;
 module.exports.handler = serverless(app);
 
 //npm install express netlify-lambda serverless-http
 //npm run build
+// http://localhost:9000/.netlify/functions/api
