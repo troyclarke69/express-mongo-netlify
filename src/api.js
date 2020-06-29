@@ -17,7 +17,7 @@ const prodctSchema = new mongoose.Schema({
 const Product = mongoose.model("Product", prodctSchema);
 
 // const mongodbUrl = config.MONGODB_URL;
-const mongodbUrl = 'mongodb+srv://troy:Gruj3267@cluster0-orxh2.gcp.mongodb.net/goshop';
+const mongodbUrl = 'mongodb+srv://troy:pass@cluster0-orxh2.gcp.mongodb.net/goshop';
 
 mongoose.connect(mongodbUrl, {
   useNewUrlParser: true,
